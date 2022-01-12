@@ -1,0 +1,10 @@
+def digital_root(n):
+    # ...
+    szamjegyek_osszege = 0
+    for i in str(n):
+        szamjegyek_osszege += int(i)
+    if len(str(szamjegyek_osszege)) == 1:
+        return szamjegyek_osszege
+    
+    else:
+        return digital_root(szamjegyek_osszege)
