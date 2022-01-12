@@ -1,0 +1,10 @@
+def open_or_senior(data):
+    res_list = []
+    for age,handicap in data:
+        if age >= 55 and handicap > 7:
+            res_list.append('Senior')
+        else:
+            res_list.append('Open')
+    
+    
+    return res_list
